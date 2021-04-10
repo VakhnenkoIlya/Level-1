@@ -5,6 +5,8 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Для PullRequest");
             Console.WriteLine("Задние 1");
 
             int[,] Array =
