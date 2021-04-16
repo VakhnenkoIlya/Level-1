@@ -6,6 +6,7 @@ namespace Lesson4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Для PullRequest");
             Console.WriteLine("Задание 1");
 
             Console.WriteLine(GetFullName("Ивонов", "Петр", "Сергеевич"));
