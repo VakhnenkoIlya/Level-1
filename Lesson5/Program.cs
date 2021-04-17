@@ -8,6 +8,7 @@ namespace Lesson5
 
         static void Main(string[] args)
         {
+            //для пул реквеста
             Console.WriteLine("Задание 1");
             Console.WriteLine("Введите предложение");
 
