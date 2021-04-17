@@ -9,18 +9,27 @@ namespace Lesson5
         static void Main(string[] args)
         {
             Console.WriteLine("Задание 1");
+            Console.WriteLine("Введите предложение");
 
-            string filename = "startup.txt";
-            File.WriteAllText(filename, "Этот файл введен с клавиатуры \n");
+            string filename = "text.txt";
+            File.WriteAllText(filename, Console.ReadLine());
 
             Console.WriteLine("Задание 2");
-
-            File.AppendAllText(filename, DateTime.Now.ToString());
+            
+            File.AppendAllText("start.up.txt", DateTime.Now.ToString() + "\n");
 
             Console.WriteLine("Задание 3");
+            Console.WriteLine("Введите числа от 0 до 255 через пробел");
+          
+            string[] numbers = Console.ReadLine().Split(' ');
+            byte[] array = new byte[numbers.Length];
 
-            byte[] aray = { 1, 3, 4, 9 };
-            File.WriteAllBytes("bytes.bin", aray);
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                 array [i] = byte.Parse(numbers[i]);
+
+            }
+            File.WriteAllBytes("bytes.bin", array);
 
 
             Console.WriteLine("Задание 4");
