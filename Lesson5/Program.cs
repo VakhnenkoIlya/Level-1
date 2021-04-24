@@ -21,7 +21,7 @@ namespace Lesson5
 
             Console.WriteLine("Задание 3");
             Console.WriteLine("Введите числа от 0 до 255 через пробел");
-          
+
             string[] numbers = Console.ReadLine().Split(' ');
             byte[] array = new byte[numbers.Length];
 
